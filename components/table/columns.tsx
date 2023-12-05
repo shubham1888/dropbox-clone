@@ -58,13 +58,13 @@ export const columns: ColumnDef<FileType>[] = [
     header: "Link",
     cell: ({ renderValue, ...props }) => {
       return (
-        <Link
+        <a
           href={renderValue() as string}
           target="_blank"
-          className="underline text-blue-500 hover:text-blue-600"
+          className="cursor-pointer underline text-blue-500 hover:text-blue-600"
         >
           Download
-        </Link>
+        </a>
       );
     },
   },

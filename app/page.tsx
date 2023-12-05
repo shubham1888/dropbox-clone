@@ -19,9 +19,11 @@ export default function Home() {
             sequi beatae repellendus fugiat nostrum libero perspiciatis saepe
             ullam iure est debitis vel odio, dignissimos temporibus hic illum.
           </p>
-          <div className="bg-blue-500 w-fit px-8 py-4">
-            <Link href={"/dashboard"}>Try for free! -&gt;</Link>
-          </div>
+          <Link href={"/dashboard"}>
+            <div className="bg-blue-500 w-fit px-8 py-4">
+              Try for free! -&gt;
+            </div>
+          </Link>
           <video autoPlay loop muted className="rounded-lg my-8">
             <source
               src="https://aem.dropbox.com/cms/content/dam/dropbox/warp/en-us/overview/lp-header-graphite200-1920x1080.mp4"
@@ -30,7 +32,6 @@ export default function Home() {
           </video>
         </div>
       </div>
-      <h1>Dropbox clone</h1>
       <p className="text-center font-bold text-xl pt-5">Disclaimer</p>
       <p className="text-center font-light p-2">
         This video is made for informational and educational purposes only. We
