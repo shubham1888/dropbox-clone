@@ -17,7 +17,6 @@ async function Dashboard() {
     type: doc.data().type,
     size: doc.data().size,
   }));
-  console.log(skeletonFiles);
   return (
     <div>
       <Dropzone />

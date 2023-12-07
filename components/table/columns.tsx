@@ -27,17 +27,6 @@ export const columns: ColumnDef<FileType>[] = [
       );
     },
   },
-  //   {
-  //     accessorKey: "downloadUrl",
-  //     header: "Link",
-  //     cell:({renderValue,...props})=>{
-  //         <Link href={renderValue() as string}
-  //         target="_blank"
-  //         className="underline text-blue-500 hover:text-blue-600">
-  //             Download
-  //         </Link>
-  //     }
-  //   },
   {
     accessorKey: "filename",
     header: "Filename",
@@ -59,12 +48,13 @@ export const columns: ColumnDef<FileType>[] = [
     cell: ({ renderValue, ...props }) => {
       return (
         <a
-          href={renderValue() as string}
+          href={`${renderValue() as string}`}
           target="_blank"
-          className="cursor-pointer underline text-blue-500 hover:text-blue-600"
+          className="underline text-blue-500 hover:text-blue-600"
         >
           Download
         </a>
+        // <p></p>
       );
     },
   },
